@@ -9,6 +9,9 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Sorethea\Permission\Filament\Resources\PermissionResource\Pages\CreatePermission;
+use Sorethea\Permission\Filament\Resources\PermissionResource\Pages\EditPermission;
+use Sorethea\Permission\Filament\Resources\PermissionResource\Pages\ListPermissions;
 use Spatie\Permission\Models\Permission;
 
 class PermissionResource extends Resource
@@ -59,9 +62,9 @@ class PermissionResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => \Sorethea\Permission\Filament\PermissionResource\Pages\ListPermissions::route('/'),
-            'create' => \Sorethea\Permission\Filament\PermissionResource\Pages\CreatePermission::route('/create'),
-            'edit' => \Sorethea\Permission\Filament\PermissionResource\Pages\EditPermission::route('/{record}/edit'),
+            'index' => ListPermissions::route('/'),
+            'create' =>CreatePermission::route('/create'),
+            'edit' => EditPermission::route('/{record}/edit'),
         ];
     }
 }
