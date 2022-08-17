@@ -1,16 +1,22 @@
 <?php
 namespace Sorethea\Permission;
 
-use Filament\PluginServiceProvider;
-use Sorethea\Permission\Filament\Resources\PermissionResource;
-use Sorethea\Permission\Filament\Resources\RoleResource;
+use Illuminate\Support\ServiceProvider;
 
-class PermissionServiceProvider extends PluginServiceProvider
+/**
+ *
+ */
+class PermissionServiceProvider extends ServiceProvider
 {
-    public static string $name = 'permission';
-    protected array $resources = [
-        PermissionResource::class,
-        RoleResource::class,
-    ];
 
+    public function register()
+    {
+        $this->app->register(PermissionResourceServiceProvider::class);
+        $this->app->register(PermissionAuthServiceProvider::class);
+    }
+
+    public function boot()
+    {
+
+    }
 }
