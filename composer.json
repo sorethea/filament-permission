@@ -1,6 +1,6 @@
 {
     "name": "sorethea/permission",
-    "description": "Permission & role management for Filament Admin",
+    "description": "Filament plugin for permissions and roles",
     "type": "filament-plugin",
     "require": {
         "spatie/laravel-permission": "5.x-dev"
