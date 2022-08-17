@@ -11,8 +11,8 @@ class PermissionServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->register(PermissionResourceServiceProvider::class);
-        $this->app->register(PermissionAuthServiceProvider::class);
+        $this->app->make("Sorethea\\Permission\\PermissionResourceServiceProvider");
+        $this->app->make("Sorethea\\Permission\\PermissionAuthServiceProvider");
     }
 
     public function boot()
