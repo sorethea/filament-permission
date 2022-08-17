@@ -7,7 +7,7 @@ use Sorethea\Permission\Filament\Resources\RoleResource;
 
 class PermissionServiceProvider extends PluginServiceProvider
 {
-
+    public static string $name = 'permission';
     protected array $resources = [
         PermissionResource::class,
         RoleResource::class,
