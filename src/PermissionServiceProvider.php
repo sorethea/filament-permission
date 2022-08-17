@@ -1,0 +1,27 @@
+<?php
+namespace Sorethea\Permission;
+
+use Filament\PluginServiceProvider;
+
+class PermissionServiceProvider extends PluginServiceProvider
+{
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+    }
+}
