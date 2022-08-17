@@ -13,23 +13,4 @@ class PermissionServiceProvider extends PluginServiceProvider
         RoleResource::class,
     ];
 
-    /**
-     * Register services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
-
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
 }
