@@ -3,7 +3,7 @@
     "description": "Filament plugin for permissions and roles",
     "type": "filament-plugin",
     "require": {
-        "spatie/laravel-permission": "5.x-dev"
+        "spatie/laravel-permission": "5.*"
     },
     "license": "MIT",
     "autoload": {
