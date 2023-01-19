@@ -2,7 +2,6 @@
     "name": "sorethea/permission",
     "description": "Filament plugin for permissions and roles",
     "type": "filament-plugin",
-    "version": "1.0.0-dev",
     "require": {
         "spatie/laravel-permission": "5.x-dev"
     },
